@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './searchInput.css'
 
 export default function SearchInput({ getPokemon }) {
   const [search, setSearch] = useState("");
@@ -21,7 +22,7 @@ export default function SearchInput({ getPokemon }) {
         />
       </form>
       <button className="btn-danger " onClick={(e) => getPokemon(search)}>
-        Buscar
+         Buscar
       </button>
     </>
   );
