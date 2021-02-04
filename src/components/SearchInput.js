@@ -5,6 +5,7 @@ export default function SearchInput({ getPokemon }) {
   const [search, setSearch] = useState("");
 
   function handleChange(e) {
+    e.preventDefault();
     setSearch(e.target.value.toLowerCase());
   }
 
