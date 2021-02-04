@@ -1,5 +1,5 @@
 form{
-    width: 30%;
+    width: 320px;
     margin: auto;
 }
 
@@ -15,7 +15,7 @@ form input{
 
 button{
     display:block;
-    width: 30%;
+    width: 320px;
     margin: auto;
 }
 
