@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import './searchInput.css'
+import "./searchInput.css";
 
 export default function SearchInput({ getPokemon }) {
   const [search, setSearch] = useState("");
 
   function handleChange(e) {
-    setSearch(e.target.value);
+    setSearch(e.target.value.toLowerCase());
   }
 
   return (
@@ -22,7 +22,7 @@ export default function SearchInput({ getPokemon }) {
         />
       </form>
       <button className="btn-danger " onClick={(e) => getPokemon(search)}>
-         Buscar
+        Buscar
       </button>
     </>
   );
